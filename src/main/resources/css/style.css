@@ -1,9 +1,70 @@
+.root {
+  timer-green: #54bbab;
+  timer-blue: #2699d6;
+  timer-blue--light: #72c8f7;
+  timer-white: #ffffff;
+  timer-black: #070c21;
+  timer-space: #585fa8;
+  timer-light-black: #0c1326;
+  timer-gray: #f1f9fe;
+  timer-red: #e74c3c;
+  timer-yellow: #f1c40f;
+  timer-gradient: linear-gradient(
+    from 0% 0% to 100% 100%,
+    timer-space,
+    timer-green,
+    timer-blue
+  );
+}
+
+.main-container {
+  -fx-background-color: timer-gradient;
+  -fx-padding: 20px 384px;
+}
+
+.main-container * {
+  -fx-text-fill: timer-black;
+}
+
+.timer-container {
+  -fx-background-color: timer-white;
+  -fx-border-radius: 15px;
+  -fx-padding: 50px;
+  -fx-width: 40%;
+}
+
 .button {
-  -fx-background-color: #4caf50;
-  -fx-text-fill: white;
+  -fx-text-fill: timer-white;
   -fx-padding: 10px 20px;
   -fx-font-size: 16px;
   -fx-font-weight: bold;
   -fx-border-radius: 5px;
   -fx-background-radius: 5px;
+  -fx-min-width: 150px;
 }
+
+.button:hover {
+  -fx-cursor: hand;
+}
+
+.add-button {
+  -fx-background-color: timer-blue;
+}
+
+.stop-button {
+  -fx-background-color: timer-red;
+}
+
+.pause-button {
+  -fx-background-color: timer-yellow;
+}
+
+.start-button {
+  -fx-background-color: timer-green;
+}
+
+/*.inactive .stop-button,
+.inactive .pause-button {
+  -fx-max-width: 0;
+  -fx-opacity: 0;
+}*/
