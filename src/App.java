@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class App implements IApp {
+public class App implements ITimerWindow, ITimerController {
   private JFrame frame;
   private JLabel countdownLabel;
   private int totalSeconds = 0;
