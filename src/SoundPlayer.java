@@ -3,7 +3,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
-public class SoundPlayer {
+public class SoundPlayer implements ISoundPlayer {
   private Clip clip;
 
   public SoundPlayer(String soundFilePath) {
